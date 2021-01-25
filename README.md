@@ -7,6 +7,11 @@
 - docker-compose build
 - docker-compose up
 
-Based on nginx config server should be running at http://localhost:80.
+Based on the nginx configuration, server should be running at http://localhost:80.
 
-Go ahead and use load testing tool such as [loadtest](https://www.npmjs.com/package/loadtest) to try to crash the servers :wink:
+Go ahead and use a load testing tool such as [loadtest](https://www.npmjs.com/package/loadtest) to try to crash the servers :wink:
+
+
+Eg. command with [loadtest](https://www.npmjs.com/package/loadtest)
+
+`loadtest -t 5 -c 100 --rps 100 http://localhost:80`
